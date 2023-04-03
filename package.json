@@ -1,14 +1,18 @@
 {
-  "name": "develitesse",
+  "name": "@develit-io/develitesse",
   "type": "module",
   "version": "1.0.0",
   "main": "./nuxt.config.ts",
+  "files": [
+    "nuxt.config.ts"
+  ],
   "scripts": {
     "dev": "nuxi dev .playground",
     "build": "nuxt build .playground",
     "generate": "nuxt generate .playground",
     "preview": "nuxt preview .playground",
-    "postinstall": "nuxt prepare .playground"
+    "lint": "eslint .",
+    "release": "release-it"
   },
   "devDependencies": {
     "@nuxt/devtools": "^0.2.5",
@@ -18,6 +22,20 @@
     "@unocss/nuxt": "^0.50.6",
     "@vueuse/nuxt": "^9.13.0",
     "nuxt": "^3.3.1",
-    "pinia": "^2.0.33"
+    "pinia": "^2.0.33",
+    "release-it": "^15.10.0",
+    "typescript": "^4.9.3"
+  },
+  "release-it": {
+    "npm": {
+      "access": "public"
+    },
+    "git": {
+      "commitMessage": "chore(release): release v${version}"
+    },
+    "github": {
+      "release": true,
+      "releaseName": "v${version}"
+    }
   }
 }
