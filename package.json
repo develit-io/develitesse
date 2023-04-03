@@ -14,15 +14,16 @@
     "lint": "eslint .",
     "release": "release-it"
   },
-  "devDependencies": {
+  "dependencies": {
     "@nuxt/devtools": "^0.2.5",
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxtjs/color-mode": "^3.2.0",
     "@pinia/nuxt": "^0.4.7",
     "@unocss/nuxt": "^0.50.6",
-    "@vueuse/nuxt": "^9.13.0",
+    "@vueuse/nuxt": "^9.13.0"
+  },
+  "devDependencies": {
     "nuxt": "^3.3.1",
-    "pinia": "^2.0.33",
     "release-it": "^15.10.0",
     "typescript": "^4.9.3"
   },
