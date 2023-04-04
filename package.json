@@ -4,7 +4,8 @@
   "version": "1.1.1",
   "main": "./nuxt.config.ts",
   "files": [
-    "nuxt.config.ts"
+    "nuxt.config.ts",
+    "unocss.config.ts"
   ],
   "scripts": {
     "dev": "nuxi dev .playground",
@@ -12,15 +13,21 @@
     "generate": "nuxt generate .playground",
     "preview": "nuxt preview .playground",
     "lint": "eslint .",
-    "release": "release-it"
+    "release": "release-it",
+    "test": "vitest"
   },
   "dependencies": {
+    "@antfu/eslint-config": "^0.37.0",
     "@nuxt/devtools": "^0.2.5",
     "@nuxt/eslint-config": "^0.1.1",
+    "@nuxt/test-utils": "^3.3.3",
     "@nuxtjs/color-mode": "^3.2.0",
     "@pinia/nuxt": "^0.4.7",
     "@unocss/nuxt": "^0.50.6",
-    "@vueuse/nuxt": "^9.13.0"
+    "@vue/test-utils": "^2.3.2",
+    "@vueuse/nuxt": "^9.13.0",
+    "eslint": "^8.36.0",
+    "vitest": "^0.29.8"
   },
   "devDependencies": {
     "nuxt": "^3.3.1",

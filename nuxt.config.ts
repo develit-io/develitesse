@@ -1,3 +1,6 @@
+import { createResolver } from '@nuxt/kit'
+const { resolve } = createResolver(import.meta.url)
+
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: [
@@ -22,9 +25,7 @@ export default defineNuxtConfig({
     '@unocss/reset/tailwind.css',
   ],
   unocss: {
-    uno: true,
-    icons: true,
-    attributify: true,
+    configFile: resolve('./unocss.config.ts'),
   },
   colorMode: {
     classSuffix: '',
