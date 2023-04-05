@@ -27,6 +27,7 @@
     "@vue/test-utils": "^2.3.2",
     "@vueuse/nuxt": "^9.13.0",
     "eslint": "^8.36.0",
+    "pinceau": "^0.18.8",
     "vitest": "^0.29.8"
   },
   "devDependencies": {
